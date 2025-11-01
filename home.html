@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<link rel="stylesheet" href="style2.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy Birthday</title>
+</head>
+<body>
+<div class="container">
+<div class="left">
+  <div class="avatar-wrap" title="soroush">
+    <img src="photo_2025-10-26_11-27-12.jpg" alt="soroush">
+  </div>
+  <h1 style="font-size: 23px;">تولدت مبارک عشق من</h1>
+  <p class="lead" style="font-size: 13px;">امیدوارم بهترین‌ها همیشه همراهت باشه ❤️</p>
+
+</div>
+
+
+<div class="right">
+  <div class="text-area">
+    سلام مرد قدیمی من ❤️<br><br>
+    سروش قشنگم، امروز 27 آبان و تولد 27 سالگی توا و من خیلی خوش شانسم که تو این نقطه از زمان, کنار توام و قلب مهربون تورو دارم
+    <br>
+    عزیزدل ساغر 
+    <br>
+    بهترینا برات اتفاق بیوفته و به همه چیزایی که آرزوشونو داری برسی.
+    <br>
+    من بهت ایمان دارم و می‌دونم که میرسی چون لیاقتشو داری, و همیشه بهت افتخار میکنم مرد من.<br> سروشم خیلی دوست داشتم پیشم باشی تا این روز قشنگو کنار هم جشن بگیریم اما نمیشه پس تصمیم گرفتم اینجوری کنارت باشم قشنگم.
+    <br>
+    می‌خوام بدونی که برام مهمی ؛ بیشتر از چیزی که فکرش رو بکنی.
+    <br>
+    امیدوارم که دیدن این پیام خوشحالت کنه چون ازت دور بودم تنها هدیه ای بود که میتونستم باهاش بهت یادآوری کنم که چقدر خوشحالم از به دنیا اومدنت.
+    <br>
+  
+  </div>
+  <button class="btn" id="loveBtn">seni seviyorum❤️</button>
+</div>
+
+<div class="controls">
+      <button class="btn" id="playBday">▶️ play</button>
+      <button class="btn secondary" id="pauseBday">⏸️ pause</button>
+</div>
+
+</div>
+
+
+<audio id="bdayAudio" loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+
+<script>
+const bAudio = document.getElementById('bdayAudio');
+  document.getElementById('playBday').addEventListener('click', ()=> bAudio.play().catch(()=>{}));
+  document.getElementById('pauseBday').addEventListener('click', ()=> bAudio.pause());
+document.getElementById('loveBtn').addEventListener('click', ()=>{
+  const heart = document.createElement('div');
+  heart.className = 'heart';
+  heart.textContent = '❤️';
+  heart.style.left = Math.random() * (window.innerWidth - 40) + 'px';
+  heart.style.top = window.innerHeight - 60 + 'px';
+  document.body.appendChild(heart);
+  setTimeout(()=>{heart.remove()},1000);
+});
+</script>
+</body>
+</html>
