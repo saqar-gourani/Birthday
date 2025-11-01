@@ -2,7 +2,7 @@
   --bg: #000;
   --glass-bg: rgba(255,255,255,0.05);
   --card: rgba(255,255,255,0.03);
-  --accent: #7ec8ff;
+  --accent: #fff;
   --text: #fff;
   --muted: rgba(255,255,255,0.7);
   --blur: 12px;
@@ -160,3 +160,4 @@ backdrop-filter: blur(6px);
   /* disable background-attachment (if you had set it) */
   body{ background-attachment: scroll }
 }
+
